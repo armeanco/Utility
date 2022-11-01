@@ -22,9 +22,10 @@ int main(int argc, char** argv) {
 
 		seed = dist(rng);
 
-		if(Assert(ref(seed), sol2(seed))) { failed++; }
+		if(Assert(ref(seed), sol2(seed))) 
+		     { failed++;  }
 
-		else                     { succeed++; }
+		else { succeed++; }
 	}
 
 	Output(failed, succeed);
